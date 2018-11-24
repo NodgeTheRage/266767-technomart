@@ -7,6 +7,23 @@
 <body>
   <header class="header">
 
+	  <div class="header-top">
+
+            <div class="site-logo-header">Техномарт</div>
+
+            <form action="https://echo.htmlacademy.ru" method="get">
+
+			<label for="search">Поиск:</label>
+			<input name="search" id="search"  type="search">
+
+		  	</form>
+
+            <a href="#" class="bookmarks">Закладки</a>
+            <a href="#" class="cart">Корзина</a>
+            <a href ="#" class="buy-button">Оформить заказ</a>
+
+        </div>
+
 		<section class="header-main">
 
       	<h1 class="header-h1">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -14,13 +31,13 @@
         <p class="contacts"><span class="phone">+7 (812) 555-05-55</span>г.Санкт-Петербург, ул. Б. Конюшенная, д19/8</p>
 
         <ul class="user-links">
-          <li class="user-login"><a href="#">Вход</a></li>
+          <li class="user-login"><a href="#">Войти</a></li>
           <li class="user-registration"><a href="#">Регистрация</a></li>
   		</ul>
 
-        <nav class="site-navigation">
+        <nav class="site-navigation" aria-label="Навигация по сайту">
            <ul class="nav-list">
-                <li class="top-nav-link"><a href="index.html">Главная</a></li>
+                <li class="top-nav-link"><a href="index.html" >Главная</a></li>
                 <li class="top-nav-link"><a href="company.html">Компания</a></li>
                 <li class="top-nav-link"><a href="catalog.html">Каталог</a></li>
                 <li class="top-nav-link"><a href="news.html">Новости</a></li>
@@ -32,13 +49,7 @@
 
 		</section>
 
-        <div class="header-top">
-            <div class="site-logo-header">Техномарт</div>
-            <!--  форма поиска -->
-            <a href="#" class="bookmarks">Закладки</a>
-            <a href="#" class="cart">Корзина</a>
-            <a href ="#" class="buy-button">Оформить заказ</a>
-        </div>
+
       </header>
 
       <main class="container">
@@ -60,7 +71,7 @@
                     <li>ЖэлДорЭкспедиция</li>
                 </ul>
 
-                 <a href="company.html">Подробнее о компании</a>
+                 <a class="company" href="company.html">Подробнее о компании</a>
 
             </div>
 
@@ -69,7 +80,7 @@
                 <h2 class="h2-contacts">Контакты</h2>
                 <p class="company-place">Вы можете забрать товар сами, заехав в наш офис:
 
-                 <a href="map.html"><img src="img/mini-map.jpg"></a>
+                 <a href="map.html"><img src="img/mini-map.jpg" alt="Ссылка-изображение карты"></a>
 
                 </p>
                 <a class="mail" href="mail.html">Заблудились? Напишите нам!</a>
@@ -95,7 +106,7 @@
                     +7 (812) 555-05-55
                 </p>
 
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Дополнительная навигация">
                     <ul>
                         <li class="list-link"><a href="company.html">Компания</a></li>
                         <li class="list-link"><a href="new.html">Новости</a></li>
@@ -105,7 +116,7 @@
                     </ul>
                 </nav>
 
-               <nav class="footer-nav">
+               <nav class="footer-nav-additional" aria-label="Список предложений">
                     <ul>
                         <li class="attention"><a href="materials.html">Материалы</a></li>
                         <li class="attention"><a href="technics.html">Техника</a></li>
@@ -122,9 +133,9 @@
 
                     <div class="social-block">
                           <ul>
-                            <li><a class="social-button" href="#">Вконтакте</a></li>
-                            <li><a class="social-button" href="#">Фейсбук</a></li>
-                            <li><a class="social-button" href="#">Инстаграм</a></li>
+                            <li><a class="social-button" href="#" aria-label="Мы Вконтакте"><img src="img/icon-vk.svg" alt="Иконка Вконтакте"></a></li>
+                            <li><a class="social-button" href="#" aria-label="Мы в Фейсбуке"><img src="img/icon-fb.svg" alt="Иконка Фейсбука"></a></li>
+                            <li><a class="social-button" href="#" aria-label="Мы в Инстаграме"><img src="img/icon-insta.svg" alt="Иконка Инстаграма"></a></li>
                         </ul>
                     </div>
 
@@ -135,12 +146,47 @@
 
                   	<p class="developer">
                             Разработано -
-                            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика">htmlacademy.ru</a>
                 	</p>
 
                 </div>
 
           </section>
       </footer>
+
+	  <section class="modal big-map">
+
+
+		  <a href="map-service.html" aria-label="Перейти в сервис карт"><img src="img/big-map.jpg" alt="Изображение большой карты"></a>
+		  <button class="close-map" aria-label="Закрыть карту"><img src="img/cross.svg" alt="Закрыть карту"></button>
+
+
+	  </section>
+
+	<section class="modal write-us">
+
+	  <form action="https://echo.htmlacademy.ru" method="post">
+
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" id="email" name="email" placeholder="email@example.com">
+
+		<label for="text-area">Текст письма:</label>
+		<textarea id="text-area" name="text-area" placeholder="В свободной форме"></textarea>
+
+		<div class="form-submit">
+
+		<input name="submit" id="submit" type="submit" value="Отправить">
+		</div>
+
+      </form>
+
+		<button class="close" aria-label="Закрыть форму связи"><img src="img/cross.svg" alt="Закрыть форму связи"></button>
+
+
+	</section>
+
 </body>
 </html>
