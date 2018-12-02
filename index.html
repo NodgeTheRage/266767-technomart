@@ -3,24 +3,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+
 </head>
 <body>
   <header class="header">
 
 	  <div class="header-top">
 
-            <div class="site-logo-header">Техномарт</div>
+            <a class="site-logo-header">ТЕХНОМАРТ</a>
 
-            <form action="https://echo.htmlacademy.ru" method="get">
-
-			<label for="search">Поиск:</label>
-			<input name="search" id="search"  type="search">
+            <form  action="https://echo.htmlacademy.ru" method="get">
+            <label for="search" aria-label="Поле поиска"></label>
+			<input class="search" name="search" id="search"  type="search" placeholder="Поиск:">
 
 		  	</form>
 
-            <a href="#" class="bookmarks">Закладки</a>
-            <a href="#" class="cart">Корзина</a>
-            <a href ="#" class="buy-button">Оформить заказ</a>
+            <a class="header-top-link bookmarks" href="#">Закладки</a>
+            <a class="header-top-link cart" href="#">Корзина</a>
+            <a class="header-top-link buy-button" href ="#">Оформить заказ</a>
 
         </div>
 
@@ -31,19 +36,19 @@
         <p class="contacts"><span class="phone">+7 (812) 555-05-55</span>г.Санкт-Петербург, ул. Б. Конюшенная, д19/8</p>
 
         <ul class="user-links">
-          <li class="user-login"><a href="#">Войти</a></li>
-          <li class="user-registration"><a href="#">Регистрация</a></li>
+          <li class="user-login"><a class="login-link" href="#">Войти</a></li>
+          <li class="user-registration"><a class="reg-link" href="#">Регистрация</a></li>
   		</ul>
 
         <nav class="site-navigation" aria-label="Навигация по сайту">
            <ul class="nav-list">
-                <li class="top-nav-link"><a href="index.html" >Главная</a></li>
-                <li class="top-nav-link"><a href="company.html">Компания</a></li>
-                <li class="top-nav-link"><a href="catalog.html">Каталог</a></li>
-                <li class="top-nav-link"><a href="news.html">Новости</a></li>
-                <li class="top-nav-link"><a href="special.html">Спецпредложения</a></li>
-                <li class="top-nav-link"><a href="delivery.html">Доставка</a></li>
-                <li class="top-nav-link"><a href="contacts.html">Контакты</a></li>
+                <li class="top-nav-li"><a class="top-nav-link" href="index.html" >Главная</a></li>
+                <li class="top-nav-li"><a class="top-nav-link" href="#">Компания</a></li>
+                <li class="top-nav-li"><a class="top-nav-link" href="catalog.html">Каталог</a></li>
+                <li class="top-nav-li"><a class="top-nav-link" href="#">Новости</a></li>
+                <li class="top-nav-li"><a class="top-nav-link" href="#">Спецпредложения</a></li>
+                <li class="top-nav-li"><a class="top-nav-link" href="#">Доставка</a></li>
+                <li class="top-nav-li"><a class="top-nav-link" href="#">Контакты</a></li>
             </ul>
         </nav>
 
@@ -58,9 +63,9 @@
 
             <div class="main-footer-left-side">
 
-                <h2 class="company-name">Компания «Техномарт»</h2>
+                <h2 class="company-name">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
 
-                <p class="main-footer-about">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
+                <p class="main-footer-about">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.<br>
                 Мы можем доставить ваш товар в самые отдаленные точки России!
                 Техномарт работает со многими транспортными компаниями:
 				</p>
@@ -71,7 +76,7 @@
                     <li>ЖэлДорЭкспедиция</li>
                 </ul>
 
-                 <a class="company" href="company.html">Подробнее о компании</a>
+                 <a class="company" href="#">Подробнее о компании</a>
 
             </div>
 
@@ -83,7 +88,7 @@
                  <a href="map.html"><img src="img/mini-map.jpg" alt="Ссылка-изображение карты"></a>
 
                 </p>
-                <a class="mail" href="mail.html">Заблудились? Напишите нам!</a>
+                <a class="mail" href="#">Заблудились? Напишите нам!</a>
 
             </div>
 
@@ -107,21 +112,39 @@
                 </p>
 
                 <nav class="footer-nav" aria-label="Дополнительная навигация">
-                    <ul>
-                        <li class="list-link"><a href="company.html">Компания</a></li>
-                        <li class="list-link"><a href="new.html">Новости</a></li>
-                        <li class="list-link"><a href="catalog.html">Каталог</a></li>
-                        <li class="list-link"><a href="delivery.html">Доставка</a></li>
-                        <li class="list-link"><a href="contacts.html">Контакты</a></li>
+                    <ul class="footer-nav-ul">
+                        <li class="list-link">
+                            <a class="footer-nav-link" href="#">Компания</a>
+                        </li>
+                        <li class="list-link">
+                            <a class="footer-nav-link" href="#">Новости</a>
+                        </li>
+                        <li class="list-link">
+                            <a class="footer-nav-link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="list-link">
+                            <a class="footer-nav-link" href="#">Доставка</a>
+                        </li>
+                        <li class="list-link">
+                            <a class="footer-nav-link" href="#">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
 
                <nav class="footer-nav-additional" aria-label="Список предложений">
-                    <ul>
-                        <li class="attention"><a href="materials.html">Материалы</a></li>
-                        <li class="attention"><a href="technics.html">Техника</a></li>
-                        <li class="attention"><a href="tools.html">Инструмент</a></li>
-                        <li class="attention"><a href="special.html">Спецпредложелиня</a></li>
+                    <ul class="footer-nav-additional-ul">
+                        <li class="attention">
+                            <a class="footer-attention-link" href="#">Материалы</a>
+                        </li>
+                        <li class="attention">
+                            <a class="footer-attention-link" href="#">Техника</a>
+                        </li>
+                        <li class="attention">
+                            <a class="footer-attention-link" href="#">Инструмент</a>
+                        </li>
+                        <li class="attention">
+                            <a class="footer-attention-link" href="#">Спецпредложелиня</a>
+                        </li>
                     </ul>
                 </nav>
               </div>
@@ -132,7 +155,7 @@
                   Все права защищены</p>
 
                     <div class="social-block">
-                          <ul>
+                          <ul class="social-list">
                             <li><a class="social-button" href="#" aria-label="Мы Вконтакте"><img src="img/icon-vk.svg" alt="Иконка Вконтакте"></a></li>
                             <li><a class="social-button" href="#" aria-label="Мы в Фейсбуке"><img src="img/icon-fb.svg" alt="Иконка Фейсбука"></a></li>
                             <li><a class="social-button" href="#" aria-label="Мы в Инстаграме"><img src="img/icon-insta.svg" alt="Иконка Инстаграма"></a></li>
@@ -141,12 +164,12 @@
 
                   	<p class="feedback">
                             Обратная связь:
-                            <a href="#">mail@htmlacademy.ru</a>
+                            <a class="feedback-link" href="#">mail@htmlacademy.ru</a>
                   	</p>
 
                   	<p class="developer">
                             Разработано -
-                            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика">htmlacademy.ru</a>
+                            <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработчика">htmlacademy.ru</a>
                 	</p>
 
                 </div>
@@ -163,7 +186,7 @@
 
 	  </section>
 
-	<section class="modal write-us">
+	<section class="modal form-for-user">
 
 	  <form action="https://echo.htmlacademy.ru" method="post">
 
@@ -178,7 +201,7 @@
 
 		<div class="form-submit">
 
-		<input name="submit" id="submit" type="submit" value="Отправить">
+		<input class="submit"  name="submit" id="submit" type="submit" value="Отправить">
 		</div>
 
       </form>
