@@ -14,7 +14,7 @@
   <header class="header">
 
 	  <div class="header-top">
-		   <div class="container container-flex">
+		   <div class="container">
             <a class="site-logo-head">ТЕХНОМАРТ</a>
 		  	<div class="search-form">
             <form  action="https://echo.htmlacademy.ru" method="get">
@@ -32,7 +32,7 @@
         </div>
 
 		<section class="header-main">
-			<div class="container container-flex">
+			<div class="container">
       	<h1 class="header-h1">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
 
         <div class="contacts">
@@ -49,8 +49,8 @@
 			</div>
 
 		</section>
-			 <div class="container container-flex">
-           		<ul class="site-navigation nav-list">
+			 <div class="container">
+           		<ul class="site-navigation nav-list" aria-label="Навигация по сайту">
                 <li class="top-nav-li"><a class="top-nav-link" href="index.html" >Главная</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Компания</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="catalog.html">Каталог</a></li>
@@ -81,7 +81,7 @@
                     <li class="delivery-companys">ЖeлДорЭкспедиция</li>
                 </ul>
 
-                 <a class="company button-red" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
+                 <a class="company-button button-red" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
 
             </div>
 
@@ -93,7 +93,7 @@
                  <a class="mini-map" href="#"><img src="img/mini-map.jpg" alt="Ссылка-изображение карты"></a>
 
                 </p>
-                <a class="mail button-red" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+                <a class="mail-button button-red" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
 
             </div>
 
@@ -103,21 +103,20 @@
 
       <footer class="footer">
 
-		  <div class="container">
-          <section class="footer-nav">
 
-            <div class="footer-nav-top">
+          <section class="footer-section">
+			  <div class="container container-flex">
+            <div class="footer-top">
 
                 <h2 class="h2-hidden">Дополнительная навигация</h2>
 
                 <div class="site-logo-footer">ТЕХНОМАРТ</div>
 
-                <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+				<p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7 (812) 555-05-55
                 </p>
 
-                <nav class="footer-nav-main" aria-label="Дополнительная навигация">
-                    <ul class="footer-nav-ul">
+                    <ul class="footer-nav"  aria-label="Дополнительная навигация">
                         <li class="list-link">
                             <a class="footer-nav-link" href="#">Компания</a>
                         </li>
@@ -134,11 +133,12 @@
                             <a class="footer-nav-link" href="#">Контакты</a>
                         </li>
                     </ul>
-                </nav>
 
 
-               <nav class="footer-nav-additional" aria-label="Список предложений">
-                    <ul class="footer-nav-additional-ul">
+
+
+
+                    <ul class="footer-nav-additional" aria-label="Список предложений">
                         <li class="attention">
                             <a class="footer-attention-link" href="#">Материалы</a>
                         </li>
@@ -152,23 +152,21 @@
                             <a class="footer-attention-link" href="#">Спецпредложения</a>
                         </li>
                     </ul>
-                </nav>
-              </div>
 
+              </div>
+			  </div>
 
 
           </section>
-			 <div class="footer-nav-bottom">
-
+			 <div class="footer-bottom">
+				 <div class="container">
                   <p class="copyrights">© 2010-2017 Компания «Техномарт»
                   Все права защищены</p>
 
-                    <div class="social-block">
-                          <ul class="social-list">
-                            <li class="test"><a class="social-button" href="#" aria-label="Мы Вконтакте"><img src="img/icon-vk.svg" alt="Иконка Вконтакте"></a></li>
-                            <li class="test"><a class="social-button" href="#" aria-label="Мы в Фейсбуке"><img src="img/icon-fb.svg" alt="Иконка Фейсбука"></a></li>
-                            <li class="test"><a class="social-button" href="#" aria-label="Мы в Инстаграме"><img src="img/icon-insta.svg" alt="Иконка Инстаграма"></a></li>
-                        </ul>
+                    <div class="social-block" aria-label="Мы в соцсетях">
+                   			<a class="social-button" href="#" aria-label="Мы Вконтакте"><img src="img/icon-vk.svg" alt="Иконка Вконтакте"></a>
+              				<a class="social-button" href="#" aria-label="Мы в Фейсбуке"><img src="img/icon-fb.svg" alt="Иконка Фейсбука"></a>
+							<a class="social-button" href="#" aria-label="Мы в Инстаграме"><img src="img/icon-insta.svg" alt="Иконка Инстаграма"></a>
                     </div>
 
                   	<p class="feedback">
