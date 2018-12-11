@@ -225,7 +225,9 @@ body {
 .nav-list {
 	display: flex;
 	width: 940px;
-
+	padding: 0px;
+	margin-top: 30px;
+	box-sizing: border-box;
 
 }
 .header-h1 {
@@ -393,23 +395,29 @@ body {
 }
 
 .top-nav-li {
+
 	display: flex;
+
 
 
 }
 .top-nav-link {
-	padding-top: 19px;
-	padding-bottom: 19px;
+	padding: 19px 30px 19px 30px;
 	text-align: center;
-	width: 134px;
 	text-decoration: none;
 	font-size: 17px;
 	line-height: 17px;
 	color: rgba(255, 255, 255);
     background-color: rgba(50, 66, 92);
 	box-shadow: 0 5px 0 rgba(41, 52, 73);
+	box-sizing: border-box;
 }
-
+.top-nav-li:first-child .top-nav-link {
+	padding-left: 52px;
+}
+.top-nav-li:last-child .top-nav-link {
+	padding-right: 55px;
+}
 .top-nav-link:hover{
     background-color:rgba(41, 52, 73);
 }
