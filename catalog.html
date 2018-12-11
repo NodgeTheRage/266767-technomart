@@ -9,54 +9,53 @@
     	<title>HTML Academy: Техномарт</title>
   </head>
   <body>
-      <header class="header">
+	   <header class="header">
 
 	  <div class="header-top">
-		  <div class="container">
+		   <div class="container">
             <a class="site-logo-head">ТЕХНОМАРТ</a>
 		  	<div class="search-form">
             <form  action="https://echo.htmlacademy.ru" method="get">
             <label class="search-icon" for="search" aria-label="Поле поиска"></label>
 			<input class="search" name="search" id="search"  type="search" placeholder="Поиск:">
+			<div class="search-img"></div>
 		  	</form>
+
 			</div>
             <a class="header-top-link bookmarks" href="#">Закладки: 0</a>
-            <a class="header-top-link cart" href="#">Корзина: 0</a>
+            <a class="header-top-link cart cart-active" href="#">Корзина: 10</a>
             <a class="header-top-link buy-button" href ="#">Оформить заказ</a>
-	  	   </div>
+
+		  </div>
         </div>
 
 		<section class="header-main">
 			<div class="container">
       	<h1 class="header-h1">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
 
-        <ul class="contacts">
-            <li><a class="phone">+7 (812) 555-05-55</a></li>
-            <li class="top-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
-        </ul>
+        <div class="contacts">
 
-       <ul class="user-links">
+            <a class="phone"><img class="phone-img" src="img/icon-phone.svg" alt="иконка телефона">+7 (812) 555-05-55</a>
+            <p class="top-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
 
-                    <li class="user-li">
-						<a class="interactive icon" href="#" aria-label="личный кабинет">
-						</a>
-					</li>
-                    <li class="user-li">
-						<a class="interactive profile" href="#" aria-label="личный кабинет">Равшан Джамшутович</a>
-					</li>
-                    <li class="user-li">
-						<a class="interactive exit" href="#" aria-label="выход из профиля">
-						</a>
-					</li>
-                    <li><a class="user-actions interactive" href="#">Мои заказы</a></li>
-                    <li><a class="user-actions interactive" href="#">Личный кабинет</a></li>
+     <div class="user-panel">
 
-            </ul>
+
+		 	<a class="icon" href="#" aria-label="личный кабинет"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg></a>
+		 	<a class="interactive profile" href="#" aria-label="личный кабинет">Равшан Джамшутович</a>
+			<a class="exit" href="#" aria-label="выход из профиля"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg></a>
+		 	<div class="actions">
+		 	<a class="user-actions interactive" href="#">Мои заказы</a>
+            <a class="user-actions interactive" href="#">Личный кабинет</a>
+			</div>
+            </div>
 
 			</div>
+
 		</section>
-		 <div class="container">
-           <ul class="site-navigation nav-list">
+			 <div class="container">
+           		<ul class="site-navigation nav-list" aria-label="Навигация по сайту">
                 <li class="top-nav-li"><a class="top-nav-link" href="index.html" >Главная</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Компания</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="catalog.html">Каталог</a></li>
@@ -64,12 +63,12 @@
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Спецпредложения</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Доставка</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Контакты</a></li>
-            </ul>
-      	</div>
-
-
+            	</ul>
+      		</div>
       </header>
-      <main class="container">
+
+
+      <main class="container temporary">
          <section class="main-head" aria-label="Навигация">
                 <h2 class="main-h1">ПЕРФОРАТОРЫ</h2>
                 <ul class="page-links">
@@ -171,23 +170,22 @@
           </section>
       </main>
 
- <footer class="footer">
-         <div class="container">
+       <footer class="footer">
 
-          <section class="footer-nav">
 
-            <div class="footer-nav-top">
+          <section class="footer-section">
+			  <div class="container container-flex">
+            <div class="footer-top">
 
                 <h2 class="h2-hidden">Дополнительная навигация</h2>
 
-                <div class="site-logo-footer">Техномарт</div>
+                <div class="site-logo-footer">ТЕХНОМАРТ</div>
 
-                <p class="footer-contacts">г.Санкт-Петербург, ул. Б. Конюшенная, д19/8
+				<p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7 (812) 555-05-55
                 </p>
 
-                <nav class="footer-nav" aria-label="Дополнительная навигация">
-                    <ul class="footer-nav-ul">
+                    <ul class="footer-nav"  aria-label="Дополнительная навигация">
                         <li class="list-link">
                             <a class="footer-nav-link" href="#">Компания</a>
                         </li>
@@ -204,10 +202,12 @@
                             <a class="footer-nav-link" href="#">Контакты</a>
                         </li>
                     </ul>
-                </nav>
 
-               <nav class="footer-nav-additional" aria-label="Список предложений">
-                    <ul class="footer-nav-additional-ul">
+
+
+
+
+                    <ul class="footer-nav-additional" aria-label="Список предложений">
                         <li class="attention">
                             <a class="footer-attention-link" href="#">Материалы</a>
                         </li>
@@ -218,23 +218,24 @@
                             <a class="footer-attention-link" href="#">Инструмент</a>
                         </li>
                         <li class="attention">
-                            <a class="footer-attention-link" href="#">Спецпредложелиня</a>
+                            <a class="footer-attention-link" href="#">Спецпредложения</a>
                         </li>
                     </ul>
-                </nav>
+
               </div>
+			  </div>
 
-              <div class="footer-nav-bottom">
 
+          </section>
+			 <div class="footer-bottom">
+				 <div class="container">
                   <p class="copyrights">© 2010-2017 Компания «Техномарт»
                   Все права защищены</p>
 
-                    <div class="social-block">
-                          <ul class="social-list">
-                            <li><a class="social-button" href="#" aria-label="Мы Вконтакте"><img src="img/icon-vk.svg" alt="Иконка Вконтакте"></a></li>
-                            <li><a class="social-button" href="#" aria-label="Мы в Фейсбуке"><img src="img/icon-fb.svg" alt="Иконка Фейсбука"></a></li>
-                            <li><a class="social-button" href="#" aria-label="Мы в Инстаграме"><img src="img/icon-insta.svg" alt="Иконка Инстаграма"></a></li>
-                        </ul>
+                    <div class="social-block" aria-label="Мы в соцсетях">
+                   			<a class="social-button" href="#" aria-label="Мы Вконтакте"><img src="img/icon-vk.svg" alt="Иконка Вконтакте"></a>
+              				<a class="social-button" href="#" aria-label="Мы в Фейсбуке"><img src="img/icon-fb.svg" alt="Иконка Фейсбука"></a>
+							<a class="social-button" href="#" aria-label="Мы в Инстаграме"><img src="img/icon-insta.svg" alt="Иконка Инстаграма"></a>
                     </div>
 
                   	<p class="feedback">
@@ -248,9 +249,7 @@
                 	</p>
 
                 </div>
-
-          </section>
-     </div>
+		</div>
       </footer>
 
 	  <section class="modal product-cart" aria-label="Всплывающее окно">
