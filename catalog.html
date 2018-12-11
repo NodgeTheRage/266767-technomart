@@ -9,34 +9,36 @@
     	<title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="header">
-         <div class="container">
-		<div class="header-top">
+      <header class="header">
 
-            <a class="site-logo-header" href="index.html">Техномарт</a>
-
+	  <div class="header-top">
+		  <div class="container">
+            <a class="site-logo-head">ТЕХНОМАРТ</a>
+		  	<div class="search-form">
             <form  action="https://echo.htmlacademy.ru" method="get">
-            <label for="search" aria-label="Поле поиска"></label>
+            <label class="search-icon" for="search" aria-label="Поле поиска"></label>
 			<input class="search" name="search" id="search"  type="search" placeholder="Поиск:">
-
 		  	</form>
-
-            <a class="header-top-link bookmarks" href="#">Закладки</a>
-            <a class="header-top-link cart active" href="#">Корзина:10</a>
+			</div>
+            <a class="header-top-link bookmarks" href="#">Закладки: 0</a>
+            <a class="header-top-link cart" href="#">Корзина: 0</a>
             <a class="header-top-link buy-button" href ="#">Оформить заказ</a>
-
-
+	  	   </div>
         </div>
 
+		<section class="header-main">
+			<div class="container">
+      	<h1 class="header-h1">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
 
-        <section class="header-main">
-                <h1 class="header-h1">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-                <p class="contacts"><a class="phone">+7 (812) 555-05-55</a></p>
-            <ul class="user-links">
+        <ul class="contacts">
+            <li><a class="phone">+7 (812) 555-05-55</a></li>
+            <li class="top-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
+        </ul>
+
+       <ul class="user-links">
 
                     <li class="user-li">
 						<a class="interactive icon" href="#" aria-label="личный кабинет">
-						<img src="img/profile.jpg" height="50" width="40" alt="Аватар профиля">
 						</a>
 					</li>
                     <li class="user-li">
@@ -44,17 +46,17 @@
 					</li>
                     <li class="user-li">
 						<a class="interactive exit" href="#" aria-label="выход из профиля">
-							<img src="img/exit.png" height="50" width="40" alt="иконка выхода">
 						</a>
 					</li>
                     <li><a class="user-actions interactive" href="#">Мои заказы</a></li>
                     <li><a class="user-actions interactive" href="#">Личный кабинет</a></li>
 
             </ul>
-         
-        </section>
-             <nav class="site-navigation" aria-label="Навигация по сайту">
-           <ul class="nav-list">
+
+			</div>
+		</section>
+		 <div class="container">
+           <ul class="site-navigation nav-list">
                 <li class="top-nav-li"><a class="top-nav-link" href="index.html" >Главная</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Компания</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="catalog.html">Каталог</a></li>
@@ -63,9 +65,10 @@
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Доставка</a></li>
                 <li class="top-nav-li"><a class="top-nav-link" href="#">Контакты</a></li>
             </ul>
-        </nav>
-        </div>
-	  </header>
+      	</div>
+
+
+      </header>
       <main class="container">
          <section class="main-head" aria-label="Навигация">
                 <h2 class="main-h1">ПЕРФОРАТОРЫ</h2>
@@ -265,6 +268,6 @@
 
 	  </section>
 
-     
+
 </body>
 </html>
