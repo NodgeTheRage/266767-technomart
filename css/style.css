@@ -496,16 +496,8 @@ body {
     font-size: 17px;
     line-height: 30px;
     color: rgba(0,0,0);
+    padding-bottom: 5px;
 }
-
-.filter-button {
-    outline: none;
-    background-color: white;
-}
-
-
-
-
 
 .main-footer {
 	display: flex;
@@ -677,8 +669,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
+    padding-top: 14px;
+    padding-left: 34px;
+    margin-bottom: 20px;
 }
 .catalog-list {
     width: 700px;
@@ -862,8 +855,82 @@ body {
 	text-decoration: line-through;
 	color: rgba(153, 153, 153);
     height: 18px;
+} 
+
+.filter {
+    margin-top: -8px;
+}
+.filter-option {
+    margin-bottom: 20px;
+}
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
 
+.filter-input:focus + label {
+  outline: 1px solid black;
+}
+
+.hidden {
+    width: 0px;
+}
+.filter-option{
+    display: flex;
+    position: relative;
+}
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    left: -34px;
+    top: -2px;
+    
+}
+.filter-input-radio + label::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-off.png);
+     background-repeat: no-repeat;
+    left: -34px;
+    top: -2px;
+   
+}
+
+.filter-input-checkbox:checked + label::before{
+    background-image: url(../img/checkbox-on.svg);
+}
+.filter-input-radio:checked + label::before{
+    background-image: url(../img/radio-on.png);
+}
+.filter-input-radio:disabled + label::before,
+.filter-input-checkbox:disabled + label::before{
+    opacity: 0.4;
+}
+.filter-input-checkbox:not(:checked):not(:disabled) + label:hover::before {
+    background-image: url(../img/checkbox-off-hover.svg);
+}
+.filter-input-radio:not(:checked):not(:disabled) + label:hover::before {
+    background-image: url(../img/radio-off-hover.png);
+}
+.filter-button {
+    width: 140px;
+    height: 38px;
+    display: block;
+    outline: none;
+    background-color: white;
+    margin-top: 58px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+}
 /* filter-fill временно для удобства */
 .filter-fill {
 	margin: 0;
