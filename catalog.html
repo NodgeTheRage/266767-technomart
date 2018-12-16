@@ -87,38 +87,38 @@
 			 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
             	<span class="filter-name">ПРОИЗВОДИТЕЛИ:</span>
-            <ul class="filters">
+            <ul class="filters filters-decor">
               <li class="filter-option">
 
-                
+
                 <input class="hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                   <label for="filter-bosch">BOSCH</label>
 
               </li>
               <li class="filter-option">
 
-                
+
                 <input class="hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
                   <label for="filter-interskol">ИНТЕРСКОЛ</label>
 
               </li>
               <li class="filter-option">
 
-                
+
                 <input class="hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
                   <label for="filter-makita">MAKITA</label>
 
               </li>
               <li class="filter-option">
 
-                
+
                 <input class="hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                   <label for="filter-dewalt">DEWALT</label>
 
               </li>
               <li class="filter-option">
 
-                
+
                 <input class="hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                   <label for="filter-hitachi">HITACHI</label>
 
@@ -129,7 +129,7 @@
 		   <span class="filter-name">ПИТАНИЕ:</span>
             <ul class="filters radio-filters">
               <li class="filter-option">
-                <input class="hidden filter-input filter-input-radio" type="radio" name="power-group" value="rechargeable" id="filter-rechargeable" disabled checked>
+                <input class="hidden filter-input filter-input-radio" type="radio" name="power-group" value="rechargeable" id="filter-rechargeable" checked>
                 <label for="filter-rechargeable">АККУМУЛЯТОРНЫЕ</label>
               </li>
               <li class="filter-option">
@@ -418,19 +418,47 @@
       </footer>
 
 	  <section class="modal product-cart" aria-label="Всплывающее окно">
-		  <img src="img/ok-cart.svg" alt="ОК">
-		  <span  class="product-cart-text" >Товар добавлен в корзину</span>
+		  <div class="cart-success">
+		  <img src="img/ok-cart.png">
+		  <span  class="product-cart-text" >Товар добавлен в корзину!</span>
+		  </div>
+		  <div class="modal-cart-bottom">
 
-		  <div class="modal-product-cart-bottom">
-
-			  <a class="modal-buy-button button-red" href="#" aria-label="Оформить заказ">Оформить заказ</a>
-			  <button class="go-button button-red" aria-label="Продолжить покупки">Продолжить покупки</button>
+			  <a class="modal-buy-button button-red" href="#" aria-label="Оформить заказ">ОФОРМИТЬ ЗАКАЗ</a>
+			  <a class="go-button"  href="#" aria-label="Продолжить покупки">ПРОДОЛЖИТЬ ПОКУПКИ</a>
 
 		  </div>
-
-		  <button class="close" aria-label="Закрыть окно подтверждения"><img src="img/cross.svg" alt="Закрыть окно подтверждения"></button>
+		  <a class="button-close close-modal-cart" aria-label="Закрыть окно подтверждения"></a>
 
 	  </section>
+
+
+		<script>
+
+			var itembuy = document.querySelector(".item-buy");
+			var CartSuccess = document.querySelector(".product-cart");
+			var gobutton = document.querySelector(".go-button");
+			var CartSuccessClose = document.querySelector(".close-modal-cart");
+
+
+			itembuy.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				CartSuccess.classList.add("modal-show");
+
+			});
+
+			CartSuccessClose.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				CartSuccess.classList.remove("modal-show");
+
+			});
+
+			gobutton.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				CartSuccess.classList.remove("modal-show");
+
+			});
+		</script>
 
 
 </body>
