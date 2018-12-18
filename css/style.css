@@ -14,11 +14,14 @@ body {
 	margin: 0 auto;
 	padding: 0 0;
 	display: flex;
-	flex-wrap: wrap;
 	box-sizing: border-box;
+}
+.container-wrap {
+    flex-wrap: wrap;
 }
 
 .header {
+    min-width: 940px;
 	background-color: rgba(244,  247, 248);
 	padding-bottom: 64px;
 
@@ -499,7 +502,9 @@ body {
     color: rgba(0,0,0);
     padding-bottom: 5px;
 }
-
+.footer {
+    min-width: 940px;
+}
 .main-footer {
 	display: flex;
     padding: 55px 0px 86px 0px;
