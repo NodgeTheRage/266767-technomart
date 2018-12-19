@@ -52,6 +52,7 @@ body {
     padding-top: 11px;
     padding-left: 48px;
     padding-bottom: 12px;
+	max-height: 42px;
 }
 .search::-ms-clear {
     display: none;
@@ -386,7 +387,7 @@ body {
     line-height: 17px;
     color: #ffffff;
     background-color: #32425c;
-    box-shadow: 0 5px 0 #293449;
+    border-bottom: 5px solid #293449;
     box-sizing: border-box;
 }
 .top-nav-li:first-child .top-nav-link {
@@ -782,7 +783,7 @@ body {
   outline: 1px solid black;
 }
 .hidden {
-    width: 0;
+    display: none;
 }
 .filter-input-checkbox + label::before {
     content: "";

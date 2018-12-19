@@ -3,12 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-
 </head>
 <body>
 <header class="header">
@@ -71,7 +69,7 @@
     <div class="main-footer-right-side">
         <h2 class="h2-contacts">КОНТАКТЫ</h2>
         <p class="company-place">Вы можете забрать товар сами, заехав в наш офис:
-            <a class="mini-map" href="#"><img src="img/mini-map.jpg" alt="Ссылка-изображение карты"></a>
+            <a class="mini-map" href="#"><img src="img/mini-map.jpg" alt="Ссылка-изображение карты" width="300" height="158"></a>
         </p>
         <a class="mail-button button-red" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
     </div>
@@ -159,7 +157,7 @@
     </form>
     <a class="button-close feedback-close" href="#" aria-label="Закрыть форму связи"></a>
 </section>
- <section class="modal big-map">
+<section class="modal big-map">
 		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1544950614707" width="940" height="466" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<a class="button-close map-close" aria-label="Закрыть карту"></a>
 </section>
@@ -171,7 +169,7 @@
     var bigmap = document.querySelector(".big-map");
     var mapclose = document.querySelector(".map-close");
     var focusName = document.querySelector(".input-name");
-    
+
     mail.addEventListener("click", function (evt) {
         evt.preventDefault();
         feedback.classList.add("modal-show");
