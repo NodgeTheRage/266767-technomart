@@ -1003,7 +1003,7 @@ body {
 	width: 41px;
 	height: 41px;
 	margin-right: 4px;
-	text-align: center;
+	align-items: center;
 	justify-content: center;
 }
 .copyrights {
