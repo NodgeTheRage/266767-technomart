@@ -117,7 +117,7 @@
     </form>
 </section>
     <section class="products" aria-label="Список товаров">
-        <h2 class="hidden-h2">Список товаров</h2>
+        <h2 class="h2-hidden">Список товаров</h2>
         <div class="filter-fill-2"></div>
         <ul class="catalog-list">
             <li class="catalog-item">
@@ -361,21 +361,25 @@
     <a class="button-close close-modal-cart" aria-label="Закрыть окно подтверждения"></a>
 </section>
 <script>
-			var itembuy = document.querySelector(".item-buy");
-			var CartSuccess = document.querySelector(".product-cart");
-			var gobutton = document.querySelector(".go-button");
-			var CartSuccessClose = document.querySelector(".close-modal-cart");
+			var itemBuy = document.querySelector(".item-buy"); 
+            var catalogList = document.querySelector(".catalog-list"); 
+            var CartSuccess = document.querySelector(".product-cart"); 
+            var goButton = document.querySelector(".go-button"); 
+            var CartSuccessClose = document.querySelector(".close-modal-cart"); 
 
-			itembuy.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				CartSuccess.classList.add("modal-show");
-			});
+            catalogList.addEventListener("click", function (evt) { 
+                evt.preventDefault(); 
+                var target= evt.target; 
+                if(target.classList.contains("item-buy")) { 
+                    CartSuccess.classList.add("modal-show"); 
+                } 
+            });
 			CartSuccessClose.addEventListener("click", function (evt) {
 				evt.preventDefault();
 				CartSuccess.classList.remove("modal-show");
 			});
             
-			gobutton.addEventListener("click", function (evt) {
+			goButton.addEventListener("click", function (evt) {
 				evt.preventDefault();
 				CartSuccess.classList.remove("modal-show");
 			});
