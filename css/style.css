@@ -474,6 +474,7 @@ body {
 .second {
     padding-top: 6px;
 }
+
 .manufacturers-button,
 .popular-button,
 .company-button {
@@ -484,6 +485,7 @@ body {
     padding-bottom: 9px;
     border-radius: 3px;
 }
+
 .company-place {
     width: 180px;
 }
@@ -1506,3 +1508,149 @@ body {
 .manufacturers-item:active {
     box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
 }
+.services {
+    width: 100%;
+    min-height: 522px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: blue;
+    background-color: #f4f7f9;
+    padding: 0;
+    margin: 0;
+    margin-top: 42px;
+}
+.services-info {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    margin-top: -4px;
+    margin-left: -60px;
+}
+.services-options {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin: 0;
+    
+}
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position:relative;
+    flex-direction: column;
+}
+.services-list::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 272px;
+    background-image: url(../img/services-shadow.png);
+    background-repeat: no-repeat;
+    right: 0px;
+    top: -40px;
+}
+.service-name {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    display: flex;
+    color: #ffffff;
+    background-color:#32425c;
+    cursor: pointer;
+    width: 240px;
+    height: 61px;
+    padding-left: 22px;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.services-h2 {
+    width: 100%;
+    color: #000000;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 65px;
+}
+.services-h2-info {
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+.services-text,
+.services-paragraph-info {
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: -4px;
+}
+.services-text {
+    margin-top: -41px;
+}
+.services-top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.services-button:not(:first-child) .service-name {
+    border-top: 1px solid #4e637c;
+}
+.services-descriptions {
+    width: 556px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.services-buttons {
+    position: relative;
+    width: 100%;
+}
+.credit-button {
+    min-width: 195px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border-radius: 3px;
+    background-color: #ff5357;
+}
+.service-delivery {
+    display: none;
+    position: absolute;
+    width: 680px;
+    min-height: 280px;
+    left: 360px;
+    top: -32px;
+}
+.services-show:checked + .service-name {
+    color: #32425c;
+    background-color:#ffffff;
+    border-top: 1px solid transparent;
+}
+.services-show:checked ~ .service-delivery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.image-delivery {
+    background-image: url(../img/delivery-car2.png);
+    background-repeat: no-repeat;
+    background-position: right 61px top 55px;
+}
+.image-guarantee {
+    background-image: url(../img/gurantee.png);
+    background-repeat: no-repeat;
+    background-position: right 61px top 55px;
+}
+.image-credit {
+    background-image: url(../img/credit.png);
+    background-repeat: no-repeat;
+    background-position: right 61px top 55px;
+}
+.
