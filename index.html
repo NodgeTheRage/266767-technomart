@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Техномарт</title>
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style-mini.css" rel="stylesheet">
+
     </head>
     <body>
         <header class="header">
@@ -65,11 +66,28 @@
                             <h3>Инструмент</h3>
                             <a class="content-button" href="catalog.html">НА ВСЕ СЛУЧАИ</a
                                 ></div>
-                        <div class="content-div slider">
+                        <div class="content-div slider-div">
                             <ul class="sliders">
-                                <li class="slide slide1"></li>
-                                <li class="slide slide2"></li>
+                                <li class="slide">
+                                    <h2 class="slider-h2">ПЕРФОРАТОРЫ</h2>
+                                    <p class="slider-paragraph slider-font">Настоящие мужские игрушки</p>
+                                    <img class="slider-img" src="img/slide-1.jpg" width="620" height="266" alt="slide-image">
+                                    <a class="button-red slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                                </li>
+                                <li class="slide slide-show">
+                                    <h2 class="slider-h2">ДРЕЛИ</h2>
+                                    <p class="slider-paragraph">Соседям на радость!</p>
+                                    <img src="img/slide-2.jpg" width="620" height="266" alt="slide-image">
+                                    <a class="button-red slider-button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
+                                </li>
                             </ul>
+                            <button class="slider-nav slider-arrow-left" aria-label="Слайдер влево"></button>
+                            <button class="slider-nav slider-arrow-right" aria-label="Слайдер вправо"></button>
+                            <!--Как реализовать слайдер нормально я пока не знаю :( -->
+                            <div class="pagination-buttons">
+                                <button class="pagination-button"></button>
+                                <button class="pagination-button pagination-button-current"></button>
+                            </div>
                         </div>
                     </div>
                     <div class="content-right">
@@ -92,7 +110,7 @@
                         <h2 class="products-h2">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
                         <a class="popular-button button-red" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
                     </div>
-                    <ul class="catalog-popular">
+                    <ul class="catalog-popular catalog-list">
                         <li class="item-popular item-interactive" tabindex="0">
                             <div class="item-image">
                                 <div class="image">
@@ -399,8 +417,19 @@
             <h2 class="h2-hidden">Большая карта с нашим местоположением</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1544950614707" width="940" height="466" style="border:0" allowfullscreen></iframe>
             <a class="button-close map-close" aria-label="Закрыть карту"></a>
+
         </section>
-        <script src="js/index-script.js">
-        </script>
+        <section class="modal product-cart" aria-label="Всплывашющее окно, товар добавлен в корзину">
+            <div class="cart-success">
+                <img src="img/ok-cart.png" width="66" height="66" alt="">
+                <span  class="product-cart-text" >Товар добавлен в корзину!</span>
+            </div>
+            <div class="modal-cart-bottom">
+                <a class="modal-buy-button button-red" href="#" aria-label="Оформить заказ">ОФОРМИТЬ ЗАКАЗ</a>
+                <a class="go-button"  href="#" aria-label="Продолжить покупки">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+            </div>
+            <a class="button-close close-modal-cart" aria-label="Закрыть окно подтверждения"></a>
+        </section>
+        <script src="js/js-index-mini.js"></script>
     </body>
 </html>
