@@ -578,6 +578,7 @@ label::before {
 }
 .second {
 	padding-top: 6px;
+	width: 385px;
 }
 
 .manufacturers-button,
@@ -1278,6 +1279,7 @@ label::before {
 	border-bottom: 1px dotted red;
 	opacity: 0.3;
 }
+.sorting-button:focus,
 .sorting-button:hover {
 	opacity: 1;
 	border-bottom: 1px solid red;
@@ -1299,16 +1301,24 @@ label::before {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
+.sorting-arrow:focus,
 .sorting-arrow:hover {
 	background-image: url("../img/arrow-up-down-hover.svg");
 }
 .sorting-arrow:active {
 	background-image: url("../img/arrow-up-active.svg");
 }
+
+
 .sorting-arrow-active:hover,
 .sorting-arrow-active {
 	background-image: url("../img/arrow-up-active.svg");
 }
+.sorting-arrow-active:focus  {
+	background-image: url("../img/arrow-up-active.svg");
+	outline: 1px solid red;
+}
+
 .sorting-arrow-down{
 	margin-left: 19px;
 	-webkit-transform: rotate(180deg);
@@ -1401,11 +1411,11 @@ label::before {
 	background-color: #f2f6f8;
 }
 .h2-about {
+	font-weight: 400;
 	line-height: 30px;
 	font-size: 30px;
 	color: #000000;
 	margin-top: 65px;
-	letter-spacing: -0.5px;
 }
 .paragraph-about {
 	color: #000000;
